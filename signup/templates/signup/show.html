@@ -1,0 +1,16 @@
+
+{% block body %}
+    <a href="/">Back to home</a>
+    <div align="center"> <h2>Registered Users</h2></div>
+    <table border="1" align="center" style="font-size: large">
+        <tr><td><b>Name</b></td><td><b>Age</b></td><td><b>Gender</b></td></tr>
+    {% for t in temp %}
+        <tr>
+            <td>{{ t.name }}</td>
+            <td> {{ t.age }}</td>
+            <td>{{ t.gender }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+    <div align="right" ><a href="/">Back to home</a></div>
+{% endblock %}

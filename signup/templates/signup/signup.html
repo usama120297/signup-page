@@ -1,0 +1,48 @@
+<html>
+<head>
+<title> Signup page </title>
+</head>
+<body bgcolor="#2f4f4f">
+<br><br><br><br><br><br><br><br>
+<center>
+<font size = 7 color="black" >
+S!gn Up
+</font>
+</center>
+<br><br>
+<form action="/form/" name="f1" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+<table align="center">
+<tr>
+<td>Name</td>
+<td colspan="2"><input type="text" name="t1" size=20 required></td>
+</tr>
+<tr>
+<td>age</td>
+<td colspan="2"><input type="number" name="t2" size=3 required></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td align="center">
+<input type = "radio" name = "gender" value = "Male" checked></td><td>Male</td>
+<td align="center"><input type = "radio" name = "gender" value = "Female" ></td><td>Female</td>
+</tr>
+
+<td colspan=3 align="center">
+<input type="submit" name="b1" value="register">
+</tr>
+</table>
+    <div align="center"><h2>
+        Register Users
+    </h2>
+</form>
+    <div align="center">
+        <form action="/show/"  >
+
+            <button type="submit" value="Registered Users" >Registered Users</button>
+
+        <div>
+            </div>
+            </form>
+</body>
+</html>
